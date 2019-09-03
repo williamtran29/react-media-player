@@ -2,7 +2,7 @@
   "name": "react-media-player",
   "version": "0.7.7",
   "description": "React media player.",
-  "main": "lib/react-media-player.js",
+  "main": "dist/react-media-player.js",
   "files": [
     "dist",
     "lib"
@@ -15,10 +15,6 @@
     "prebuild": "rm -rf dist && mkdir dist",
     "prepublish": "npm run build",
     "deploy": "NODE_ENV=production TARGET=minify webpack && git-directory-deploy --directory example --branch gh-pages"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/souporserious/react-media-player"
   },
   "keywords": [
     "react",
